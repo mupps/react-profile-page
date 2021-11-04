@@ -6,15 +6,16 @@ import BioEdit from './BioEdit'
 import { editBio } from '../actions'
 
 const Wrapper = s.div`
-  padding: 3rem 10rem;
-  background: rgb(246, 247, 247);
+  padding: 2rem 10rem;
+  background: GREY;
 `
 
 const Title = s.h1`
-  margin-bottom: 4rem;
+  margin-bottom: 3rem;
+  font-family: "Lucida Console", "Courier New", monospace;
 `
 
-const Content = s.div`
+const Cards = s.div`
   padding: 0 10rem;
 `
 
@@ -37,7 +38,7 @@ const Bio = ({ img, description, dispatchEditBio }) => {
       </Title>
 
       {!isEditing && (
-        <Content className="row">
+        <Cards className="row">
           <div className="col-8">
             {img && <img className="img-thumbnail" src={img} alt="Profile pic not loaded." />}
           </div>
@@ -46,7 +47,7 @@ const Bio = ({ img, description, dispatchEditBio }) => {
               {description}
             </h3>
           </div>
-        </Content>
+        </Cards>
       )}
 
       {isEditing

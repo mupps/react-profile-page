@@ -4,28 +4,8 @@ import s from 'styled-components'
 import PostsForm from './PostsForm'
 import { addPost, editPost, deletePost } from '../actions'
 
-const Modal = ({
-  dispatchAddPost,
-}) => (
-  <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
-    <div className="modal-dialog modal-dialog-centered" role="document">
-      <div className="modal-content">
-        <div className="modal-header">
-          <h5 className="modal-title" id="exampleModalLongTitle">New Blog Post</h5>
-          <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
-            <span aria-hidden="true">&times;</span>
-          </button>
-        </div>
-        <div className="modal-body">
-          <PostsForm title="" img="" description="" changeInfo={dispatchAddPost} />
-        </div>
-      </div>
-    </div>
-  </div>
-)
-
 const Post = ({
-  id, title, img, description, dispatchEditPost, dispatchDeletePost,
+  id, title, img, description, dispatchEditPost, dispatchDeletePost
 }) => {
   const [isEditing, setIsEditing] = useState(false)
 
@@ -73,11 +53,31 @@ const Post = ({
 const Title = s.h1`
   color: BLUE;
   margin-bottom: 3rem;
+  font-family: "Lucida Console", "Courier New", monospace;
 `
 
 const Wrapper = s.div`
   padding: 3rem 10rem;
 `
+const Modal = ({
+  dispatchAddPost,
+}) => (
+  <div className="modal fade" id="exampleModal" tabIndex="-1" role="dialog" aria-labelledby="exampleModal" aria-hidden="true">
+    <div className="modal-dialog modal-dialog-centered" role="document">
+      <div className="modal-content">
+        <div className="modal-header">
+          <h5 className="modal-title" id="exampleModalLongTitle">New Blog Post</h5>
+          <button type="button" className="close" data-bs-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div className="modal-body">
+          <PostsForm title="" img="" description="" changeInfo={dispatchAddPost} />
+        </div>
+      </div>
+    </div>
+  </div>
+)
 
 const Posts = ({
   posts, dispatchAddPost, dispatchEditPost, dispatchDeletePost,
