@@ -18,7 +18,7 @@ const Post = ({
             <h4 className="card-title">
               Post #
               {id}
-              :
+              : 
               { title }
             </h4>
             <p className="card-text">
