@@ -5,7 +5,7 @@ import PostsForm from './PostsForm'
 import { addPost, editPost, deletePost } from '../actions'
 
 const Post = ({
-  id, title, img, description, dispatchEditPost, dispatchDeletePost
+  id, title, img, description, dispatchEditPost, dispatchDeletePost,
 }) => {
   const [isEditing, setIsEditing] = useState(false)
 
@@ -17,8 +17,8 @@ const Post = ({
           <div className="card-body">
             <h4 className="card-title">
               Post #
-              {id}
-              : 
+              { id }
+              :
               { title }
             </h4>
             <p className="card-text">
@@ -85,10 +85,10 @@ const Posts = ({
   <Wrapper>
     <Title>
       Blog Posts
+      <button type="button" className="btn btn-dark float-right" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ marginBottom: '2rem' }}>
+        Add Post
+      </button>
     </Title>
-    <button type="button" className="btn btn-dark float-right" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ marginBottom: '2rem' }}>
-      Add Post
-    </button>
 
     <Modal dispatchAddPost={dispatchAddPost} />
 
