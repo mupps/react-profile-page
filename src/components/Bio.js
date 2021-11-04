@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { connect } from 'react-redux'
 import s from 'styled-components'
-
 import BioEdit from './BioEdit'
 import { editBio } from '../actions'
 
