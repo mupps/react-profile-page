@@ -1,0 +1,42 @@
+{
+  "name": "react-profile-page",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mupps/react-profile-page.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mupps/react-profile-page/issues"
+  },
+  "homepage": "https://github.com/mupps/react-profile-page#readme",
+  "devDependencies": {
+    "eslint-plugin-import": "^2.21.2",
+    "eslint-plugin-jsx-a11y": "^6.3.0",
+    "eslint-plugin-react": "^7.20.0",
+    "eslint-plugin-react-hooks": "^4 || ^3 || ^2.3.0 || ^1.7.0"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "bootstrap": "^5.1.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb": "^18.2.0",
+    "jquery": "^3.6.0",
+    "parcel-bundler": "^1.12.5",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-is": "^17.0.2",
+    "react-redux": "^7.2.6",
+    "react-router-dom": "^5.3.0",
+    "redux": "^4.1.2",
+    "styled-components": "^5.3.3"
+  }
+}
