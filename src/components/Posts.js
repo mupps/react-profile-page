@@ -85,7 +85,7 @@ const Posts = ({
   <Wrapper>
     <Title>
       Blog Posts
-      <button type="button" className="btn btn-dark float-right" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ marginBottom: '2rem' }}>
+      <button type="button" className="btn btn-dark" data-bs-toggle="modal" data-bs-target="#exampleModal" style={{ marginBottom: '2rem' }}>
         Add Post
       </button>
     </Title>
